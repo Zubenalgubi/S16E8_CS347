@@ -1,0 +1,422 @@
+drop view S16_previous_employee_view;
+drop view S16_employee_view;
+drop view S16_project_employee_view;
+drop view S16_manager_view;
+drop view S16_interim_manager_view;
+drop view S16_president_view;
+
+drop view S16_current_project_view;
+drop view S16_previous_project_view;
+
+create view S16_previous_employee_view as
+SELECT
+    person_id,
+    type,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    isFired,
+    salary,
+    dept_no,
+    spouse,
+    manager
+FROM S16_Person WHERE type = 'Previous Employee';
+
+create or replace TRIGGER S16_previous_employee_trigger
+     INSTEAD OF insert ON S16_previous_employee_view
+     FOR EACH ROW
+BEGIN
+    insert into s16_person(
+      person_id,
+      type,
+      first_name,
+      last_name,
+      home_address,
+      zipcode,
+      home_phone,
+      us_citizen,
+      isFired,
+      salary,
+      dept_no,
+      spouse,
+      manager)
+    VALUES (
+      :NEW.person_id,
+      'Previous Employee',
+      :NEW.first_name,
+      :NEW.last_name,
+      :NEW.home_address,
+      :NEW.zipcode,
+      :NEW.home_phone,
+      :NEW.us_citizen,
+      :NEW.isFired,
+      :NEW.salary,
+      :NEW.dept_no,
+      :NEW.spouse,
+      :NEW.manager) ;
+END;
+/
+
+create view S16_employee_view as
+SELECT
+    person_id,
+    type,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    employee_id,
+    salary,
+    salary_exception,
+    dept_no,
+    spouse,
+    manager
+FROM S16_Person WHERE type = 'Employee';
+
+create or replace TRIGGER S16_employee_trigger
+     INSTEAD OF insert ON S16_employee_view
+     FOR EACH ROW
+BEGIN
+    insert into s16_person(
+      person_id,
+      type,
+      first_name,
+      last_name,
+      home_address,
+      zipcode,
+      home_phone,
+      us_citizen,
+      employee_id,
+      salary,
+      salary_exception,
+      dept_no,
+      spouse,
+      manager)
+    VALUES (
+      :NEW.person_id,
+      'Employee',
+      :NEW.first_name,
+      :NEW.last_name,
+      :NEW.home_address,
+      :NEW.zipcode,
+      :NEW.home_phone,
+      :NEW.us_citizen,
+      :NEW.employee_id,
+      :NEW.salary,
+      :NEW.salary_exception,
+      :NEW.dept_no,
+      :NEW.spouse,
+      :NEW.manager) ;
+END;
+/
+
+create view S16_project_employee_view as
+SELECT
+    person_id,
+    type,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    employee_id,
+    salary,
+    salary_exception,
+    dept_no,
+    spouse,
+    manager
+FROM S16_Person WHERE type = 'Project Employee';
+
+create or replace TRIGGER S16_project_employee_trigger
+     INSTEAD OF insert ON S16_project_employee_view
+     FOR EACH ROW
+BEGIN
+    insert into s16_person(
+      person_id,
+      type,
+      first_name,
+      last_name,
+      home_address,
+      zipcode,
+      home_phone,
+      us_citizen,
+      employee_id,
+      salary,
+      salary_exception,
+      dept_no,
+      spouse,
+      manager)
+    VALUES (
+      :NEW.person_id,
+      'Project Employee',
+      :NEW.first_name,
+      :NEW.last_name,
+      :NEW.home_address,
+      :NEW.zipcode,
+      :NEW.home_phone,
+      :NEW.us_citizen,
+      :NEW.employee_id,
+      :NEW.salary,
+      :NEW.salary_exception,
+      :NEW.dept_no,
+      :NEW.spouse,
+      :NEW.manager) ;
+END;
+/
+
+create view S16_manager_view as
+SELECT
+    person_id,
+    type,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    employee_id,
+    salary,
+    salary_exception,
+    bonus,
+    dept_no,
+    spouse,
+    manager
+FROM S16_Person WHERE type = 'Manager';
+
+create or replace TRIGGER S16_manager_trigger
+     INSTEAD OF insert ON S16_manager_view
+     FOR EACH ROW
+BEGIN
+    insert into s16_person(
+      person_id,
+      type,
+      first_name,
+      last_name,
+      home_address,
+      zipcode,
+      home_phone,
+      us_citizen,
+      employee_id,
+      salary,
+      salary_exception,
+      bonus,
+      dept_no,
+      spouse,
+      manager )
+    VALUES (
+      :NEW.person_id,
+      'Manager',
+      :NEW.first_name,
+      :NEW.last_name,
+      :NEW.home_address,
+      :NEW.zipcode,
+      :NEW.home_phone,
+      :NEW.us_citizen,
+      :NEW.employee_id,
+      :NEW.salary,
+      :NEW.salary_exception,
+      :NEW.bonus,
+      :NEW.dept_no,
+      :NEW.spouse,
+      :NEW.manager) ;
+END;
+/
+
+create view S16_interim_manager_view as
+SELECT
+    person_id,
+    type,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    employee_id,
+    salary,
+    salary_exception,
+    bonus,
+    dept_no,
+    spouse,
+    manager
+FROM S16_Person WHERE type = 'Interim Manager';
+
+create or replace TRIGGER S16_interim_manager_trigger
+     INSTEAD OF insert ON S16_interim_manager_view
+     FOR EACH ROW
+BEGIN
+    insert into s16_person(
+      person_id,
+      type,
+      first_name,
+      last_name,
+      home_address,
+      zipcode,
+      home_phone,
+      us_citizen,
+      employee_id,
+      salary,
+      salary_exception,
+      bonus,
+      dept_no,
+      spouse,
+      manager)
+    VALUES (
+      :NEW.person_id,
+      'Interim Manager',
+      :NEW.first_name,
+      :NEW.last_name,
+      :NEW.home_address,
+      :NEW.zipcode,
+      :NEW.home_phone,
+      :NEW.us_citizen,
+      :NEW.employee_id,
+      :NEW.salary,
+      :NEW.salary_exception,
+      :NEW.bonus,
+      :NEW.dept_no,
+      :NEW.spouse,
+      :NEW.manager) ;
+END;
+/
+
+create view S16_president_view as
+SELECT
+    person_id,
+    type,
+    first_name,
+    last_name,
+    home_address,
+    zipcode,
+    home_phone,
+    us_citizen,
+    employee_id,
+    salary,
+    salary_exception,
+    bonus,
+    dept_no,
+    spouse,
+    manager
+FROM S16_Person WHERE type = 'President';
+
+create or replace TRIGGER S16_president_trigger
+     INSTEAD OF insert ON S16_president_view
+     FOR EACH ROW
+BEGIN
+    insert into s16_person(
+      person_id,
+      type,
+      first_name,
+      last_name,
+      home_address,
+      zipcode,
+      home_phone,
+      us_citizen,
+      employee_id,
+      salary,
+      salary_exception,
+      bonus,
+      dept_no,
+      spouse,
+      manager)
+    VALUES (
+      :NEW.person_id,
+      'President',
+      :NEW.first_name,
+      :NEW.last_name,
+      :NEW.home_address,
+      :NEW.zipcode,
+      :NEW.home_phone,
+      :NEW.us_citizen,
+      :NEW.employee_id,
+      :NEW.salary,
+      :NEW.salary_exception,
+      :NEW.bonus,
+      :NEW.dept_no,
+      :NEW.spouse,
+      :NEW.manager) ;
+END;
+/
+
+create view S16_current_project_view as
+SELECT
+    project_no,
+    type,
+    project_title,
+    project_active,
+    manager,
+    dept_no,
+    parent_proj
+FROM S16_Project WHERE type = 'Current Project';
+
+create or replace TRIGGER S16_current_project_trigger
+     INSTEAD OF insert ON S16_current_project_view
+     FOR EACH ROW
+BEGIN
+    insert into s16_project(
+      project_no,
+      type,
+      project_title,
+      project_active,
+      manager,
+      dept_no,
+      parent_proj )
+    VALUES (
+      :NEW.project_no,
+      'Current Project',
+      :NEW.project_title,
+      :NEW.project_active,
+      :NEW.manager,
+      :NEW.dept_no,
+      :NEW.parent_proj) ;
+END;
+/
+
+create view S16_previous_project_view as
+SELECT
+    project_no,
+    type,
+    project_title,
+    end_date_month,
+    end_date_day,
+    end_date_year,
+    est_person_hours,
+    manager,
+    dept_no,
+    parent_proj
+FROM S16_Project WHERE type = 'Previous Project';
+
+create or replace TRIGGER S16_previous_project_trigger
+     INSTEAD OF insert ON S16_previous_project_view
+     FOR EACH ROW
+BEGIN
+    insert into s16_project(
+      project_no,
+      type,
+      project_title,
+      end_date_month,
+      end_date_day,
+      end_date_year,
+      est_person_hours,
+      manager,
+      dept_no,
+      parent_proj)
+    VALUES (
+      :NEW.project_no,
+      'Previous Project',
+      :NEW.project_title,
+      :NEW.end_date_month,
+      :NEW.end_date_day,
+      :NEW.end_date_year,
+      :NEW.est_person_hours,
+      :NEW.manager,
+      :NEW.dept_no,
+      :NEW.parent_proj) ;
+END;
+/
