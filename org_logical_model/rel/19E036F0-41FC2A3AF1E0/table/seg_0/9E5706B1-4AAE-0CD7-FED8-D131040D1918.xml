@@ -1,0 +1,204 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9E5706B1-4AAE-0CD7-FED8-D131040D1918" name="S16_Project">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>1607A640-53BE-08C7-487C-33BCE5A9A486</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="project_no" id="D532AA55-0676-2DBD-F2B2-80838D018C71">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>3DA6BC65-BBFE-14B1-BCBA-B49C359B56F9</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="61354F7D-19FB-4B1C-2935-17DB3B4C0CF6">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>D309F833-7F7F-8F45-E304-A99E89C7D428</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="project_title" id="01D6371F-3F6A-3608-4ABD-1BB13660130E">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>356D0EF0-E7CD-F5BE-037D-A3B844A66CD9</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="project_active" id="C8C0F393-4C34-09EE-0D83-9C06782E78A4">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>75AA2461-8990-5E2D-8031-A5E3E545EBB7</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date_month" id="A3A1F187-A626-27E7-FFED-1E8AE4DA7282">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>7A49FF22-303B-A8F7-C900-2C44DBAE4DCA</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date_day" id="77E55147-0692-1967-4214-7B8F6F50F2C2">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>D3F8DFB8-456E-FAAA-4418-FD29D50BC921</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="end_date_year" id="C0177422-B73C-7C54-7F24-6C76C5D3598B">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>CA053798-7224-E913-0F01-AA8878E09D54</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="est_person_hours" id="72FEFD0E-DCB0-1100-1B09-5BA1B2017857">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>598F5A92-5D56-1BE2-7DC1-B7048A2F62A3</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manager" id="4BC5748F-E94D-93AD-AD52-9B189DC2B0CC">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>5CBB5188-38D2-3232-37F4-019E63B84C64</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B64F2EC8-299F-A0EF-71D7-44C6D6CA78A1" referredColumn="F2430F0F-8748-D998-4EC4-B986298BD928"/>
+</associations>
+</Column>
+<Column name="dept_no" id="DCFB9074-C216-591F-6F87-49A3D16EFEDC">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>1139AB5B-2673-160F-229F-20D0F1D9DDFA</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72A39BED-7F8C-A260-33F5-B1CFA14DD02B" referredColumn="65219798-CB7F-4DD4-FB7C-79CD426A606D"/>
+</associations>
+</Column>
+<Column name="parent_proj" id="4F47D03C-70B9-DFFD-472D-740DBE3DD59A">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>3C2BE2EB-5AF9-C9F0-0815-15BD02C6086F</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="89861A47-AB31-ABB5-87A3-5DF0C6741651" referredColumn="D532AA55-0676-2DBD-F2B2-80838D018C71"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BBCAEEA-3E20-EC57-E990-08CEAB92C229" name="S16_Project_PK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>8ADEA521-9237-E850-7892-1DD23CE15D70</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D532AA55-0676-2DBD-F2B2-80838D018C71"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="12C6544E-06E4-7FC0-5E35-65F595A4F046" name="S16_Project_S16_Department_FK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>5035C25A-640D-6DA6-5DE8-FC46A5ED0355</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DCFB9074-C216-591F-6F87-49A3D16EFEDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7143F68-8D29-7BF7-4838-33C706370F36" name="S16_Project_S16_Person_FK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>F14F9493-F456-2957-9E6C-7201A7627C71</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BC5748F-E94D-93AD-AD52-9B189DC2B0CC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECB028EE-C0EE-216E-EAF5-F1AE2D720C91" name="S16_Project_S16_Project_FK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>6E5D648B-6BD2-4FFA-7E54-93487ECD3D6D</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F47D03C-70B9-DFFD-472D-740DBE3DD59A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

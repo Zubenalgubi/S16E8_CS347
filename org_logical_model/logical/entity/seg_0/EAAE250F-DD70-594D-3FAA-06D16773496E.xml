@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EAAE250F-DD70-594D-3FAA-06D16773496E" name="S16_Children">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-24 21:52:29 UTC</createdTime>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<engineerTo>
+<item key="19E036F0-2014-1F5B-B90B-41FC2A3AF1E0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="children_id" id="F7F3486D-6357-1DA9-F331-1D86C3A4D1C2">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:41:06 UTC</createdTime>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<engineerTo>
+<item key="19E036F0-2014-1F5B-B90B-41FC2A3AF1E0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id" id="E5A7BBC2-BE03-EA71-7815-064B320DD013">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-24 21:53:02 UTC</createdTime>
+<generatorID>DA12C754-8F9E-F3C1-D12C-089F79CAAA0F</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<engineerTo>
+<item key="19E036F0-2014-1F5B-B90B-41FC2A3AF1E0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>44CFAF35-5D59-984D-E868-D17FDEEA4377</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="person_id1" id="83931B94-B408-41F4-0A43-D220B83C5295">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-24 21:56:55 UTC</createdTime>
+<generatorID>96F5C4CD-F3E8-A51B-F932-8D098A71B43C</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<engineerTo>
+<item key="19E036F0-2014-1F5B-B90B-41FC2A3AF1E0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>44CFAF35-5D59-984D-E868-D17FDEEA4377</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DB648CA7-404B-4AD3-E49E-90D64DC43C59" name="S16_Parent_Child PK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:41:25 UTC</createdTime>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="19E036F0-2014-1F5B-B90B-41FC2A3AF1E0" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F7F3486D-6357-1DA9-F331-1D86C3A4D1C2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

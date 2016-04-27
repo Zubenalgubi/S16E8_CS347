@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1137157C-2250-E2F6-43BB-F16553DFD251" name="S16_Project-Employee">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-22 22:07:08 UTC</createdTime>
+<ownerDesignName>org_conceptual_model</ownerDesignName>
+<engineerTo>
+<item key="D3AA46EF-5395-A9CF-2458-2A9FFFB82F08" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>73CC30AF-BCCA-87C8-A68A-7BCE7C7C31F4</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+</Entity>

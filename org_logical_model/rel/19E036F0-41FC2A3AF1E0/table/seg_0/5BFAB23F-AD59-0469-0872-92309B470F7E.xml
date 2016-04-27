@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5BFAB23F-AD59-0469-0872-92309B470F7E" name="S16_Proj_Emp">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>99AE8BF0-26C7-844A-958D-2D98265E1C0E</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="proj_emp_id" id="B47E447C-FFB7-6FB6-526C-89664CA880D4">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>1743A4EA-4BA4-BED0-5311-EC206FDF2B3C</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="project" id="858C60B1-3AC4-DC7C-6012-228B0E0F2080">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>9EC0F435-843C-250E-9B17-4CECCE013364</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9493935-0C64-25F1-CE48-22E986A9BA14" referredColumn="D532AA55-0676-2DBD-F2B2-80838D018C71"/>
+</associations>
+</Column>
+<Column name="employee" id="E7C65AAF-8AEE-8A4B-4BB1-642B20AD80BB">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>367420AA-4D49-331C-5816-FBA6C51E5A39</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F2F6BE88-7973-DA10-0729-7BDCDCFD7AFA" referredColumn="F2430F0F-8748-D998-4EC4-B986298BD928"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="114309CD-62D1-CA27-580D-A918EA4D72B2" name="S16_Proj_Emp_PK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>A90B2E9A-CE6A-EA73-BDEB-763B0AF30946</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B47E447C-FFB7-6FB6-526C-89664CA880D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B521892F-A73E-1165-6A31-CF1B1F817B8A" name="S16_Proj_Emp_S16_Person_FK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>D87A369A-8A66-F0E5-5186-F994D5BE4885</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E7C65AAF-8AEE-8A4B-4BB1-642B20AD80BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E89AE08-34BB-8680-C64A-3350BD70E7EB" name="S16_Proj_Emp_S16_Project_FK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>EFDEC6A1-2CBB-F1A3-06EC-264C9B164D45</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="858C60B1-3AC4-DC7C-6012-228B0E0F2080"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

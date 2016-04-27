@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A866BD4E-4774-F8D4-F64A-6EBDBF737B7C" name="S16_Par_Child">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>EAAE250F-DD70-594D-3FAA-06D16773496E</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<ordsAlias>s16_children</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="children_id" id="936A035F-8BBE-1590-336C-0E31204E0000">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>F7F3486D-6357-1DA9-F331-1D86C3A4D1C2</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parent" id="E118D01E-724D-367C-7490-80500D8FD285">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>E5A7BBC2-BE03-EA71-7815-064B320DD013</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F4DCBE3-CA93-8DEF-8AFD-12999310C117" referredColumn="F2430F0F-8748-D998-4EC4-B986298BD928"/>
+</associations>
+</Column>
+<Column name="child" id="97155746-39DD-FFC9-C6F7-F93CBB84A02C">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>83931B94-B408-41F4-0A43-D220B83C5295</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1418EB2-FA51-689F-BD1F-F9E0BBCA83BD" referredColumn="F2430F0F-8748-D998-4EC4-B986298BD928"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="663EA614-F648-A60D-7F13-093BE1FDF97E" name="S16_Children_PK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>DB648CA7-404B-4AD3-E49E-90D64DC43C59</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="936A035F-8BBE-1590-336C-0E31204E0000"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACD2D147-1CB5-F401-4811-D7E31EF48D64" name="S16_Children_S16_Person_FK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>DA12C754-8F9E-F3C1-D12C-089F79CAAA0F</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E118D01E-724D-367C-7490-80500D8FD285"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6FAE2A7-E83D-3833-6B47-7F4E6388D5F2" name="S16_Children_S16_Person_FKv2">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>96F5C4CD-F3E8-A51B-F932-8D098A71B43C</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97155746-39DD-FFC9-C6F7-F93CBB84A02C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

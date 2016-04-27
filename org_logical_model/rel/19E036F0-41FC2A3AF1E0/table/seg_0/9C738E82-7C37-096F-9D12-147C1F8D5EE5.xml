@@ -1,0 +1,276 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C738E82-7C37-096F-9D12-147C1F8D5EE5" name="S16_Person">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>CBC89176-EF7B-71A1-BDD0-408C40BA073A</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="person_id" id="F2430F0F-8748-D998-4EC4-B986298BD928">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>44CFAF35-5D59-984D-E868-D17FDEEA4377</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="type" id="C2093474-4EEB-8E60-9FAE-72F4F3916D51">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>11C97AFD-B64C-FAC6-95CA-CE67C298791F</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="first_name" id="A4CA2B17-56DD-4884-7056-7B2C23826943">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>ADB492AE-E2C4-E285-46C1-2C786B84EBC5</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="6C984B57-1CB6-D3A4-6307-890249C77EA3">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>2CCE2798-D8B5-B8E4-E723-332FEEEF7373</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="home_address" id="4F81DDAF-6645-88E7-4251-9B07CC5CEECC">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>8AABF742-A981-B851-9FC0-FBE191569575</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zipcode" id="AB882201-AD65-639B-C505-94B8A0786CF0">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>698D2C7A-C9F1-D123-1CEB-D9B336542B6F</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="home_phone" id="5004E6B4-EF37-9ABF-2897-A3AB7381D793">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>F179D071-6FBE-D425-4AFC-DE856A3EEDBE</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="us_citizen" id="D8265660-F271-3916-B7C8-A400E6711F0A">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>952B74CD-3359-C903-5744-4D227D612A99</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="employee_id" id="7193A410-9BF4-84AB-41FF-15605BD5D577">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>8CBC8D42-9380-095D-5DBB-5408E9F5E625</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salary" id="B08619FC-798B-9EA0-04F1-69EB6567B740">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>0298F5A5-A7BE-E055-DB3A-E5BF1DF690FD</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salary_exception" id="2E58568F-6213-57B1-14CF-80ED03D5A314">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>DA510009-0450-8B1A-A307-42B64CC3AFA0</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bonus" id="5B1AF2A0-20AA-3A5C-0E4A-664468795D58">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>693C3C80-4282-661B-5B40-ACC92159234E</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="isFired" id="D97F9ADD-4515-CFAA-E8CB-BAEF441A2A0C">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>9641B7DB-5EDD-E9AB-CAEB-4FD3D68F374B</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dept_no" id="815E3CDF-455F-5D5B-8735-64F4226E5258">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>381ACF1F-7F8B-65AF-4582-741AF8E92993</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B6DCE8E-84E6-656C-5FD5-B26EFA15C1E9" referredColumn="65219798-CB7F-4DD4-FB7C-79CD426A606D"/>
+</associations>
+</Column>
+<Column name="spouse" id="942CE9B5-9215-9DDE-1A18-85A4D6934EBD">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>03B02EAA-3BBB-9FA5-F061-D6D6B7555170</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="43E74C18-6EF4-0BE8-0A73-E746487970EB" referredColumn="F2430F0F-8748-D998-4EC4-B986298BD928"/>
+</associations>
+</Column>
+<Column name="manager" id="E60E4257-0D6A-A6F5-7C7C-873885144256">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>D03EC00A-0493-2112-F4B1-CF4E3BEF46D8</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD1CAF97-24FB-4104-63C5-D73C5945DF88" referredColumn="F2430F0F-8748-D998-4EC4-B986298BD928"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92191B98-3C3E-29A6-299D-BD2CE54259F1" name="S16_Person_PK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>86782F86-96AF-A9EE-6B64-1DA3C187CD41</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2430F0F-8748-D998-4EC4-B986298BD928"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="949698F0-816F-D569-C489-EDD981AAD6E5" name="S16_Person__IDX">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>8E05444F-B256-FEB8-423D-37705605DC9C</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="942CE9B5-9215-9DDE-1A18-85A4D6934EBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2BC40911-9B34-0795-0B4E-67B378656B7F" name="S16_Person_S16_Department_FK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>C0058712-5980-E8D1-0D1A-505AA49A9C17</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="815E3CDF-455F-5D5B-8735-64F4226E5258"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0A869E3-AF11-9A38-67D0-0EF0A5AB57B8" name="S16_Person_S16_Person_FK">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>5D977B81-E946-D270-7E4F-4E12DD7E1B16</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E60E4257-0D6A-A6F5-7C7C-873885144256"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF36E5AC-FF29-F933-4BAB-9886DAA99633" name="S16_Person_S16_Person_FKv2">
+<createdBy>cameron</createdBy>
+<createdTime>2016-03-29 21:57:02 UTC</createdTime>
+<generatorID>8E05444F-B256-FEB8-423D-37705605DC9C</generatorID>
+<ownerDesignName>org_logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="942CE9B5-9215-9DDE-1A18-85A4D6934EBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
